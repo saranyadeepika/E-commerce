@@ -1,0 +1,302 @@
+          login box
+		  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <div class="main">
+     <div class="logo">
+        <img src="logo.png" alt="imgs">
+        <p>Welcome back</p>
+        
+        <div class="valid">   
+            <input type="text" placeholder="enter your name" class="inp1">
+            <input type="password" placeholder="enter your password" class="inp1"></div>
+   
+         <button>Login to sara</button>
+     </div>
+     <div class="sign-up">
+        <p>Not a member?</p><span><a href="">sign-up</a></span>
+            <a href="">Forgot your password</a>
+     </div>
+     <div class="last">
+        <p class="terms">By continuing you agree the <a href="">terms</a> and acknowledge you have read our <a href="">privacy policy</a></p>
+     </div>
+   </div> 
+</body>
+</html>
+                       css
+
+.main
+{   width: 30%;
+    margin: 0 auto;
+    border-top: 1px solid black;
+    margin-top: 7%;
+
+}
+.logo
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+input{
+    width: 50%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.valid
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.inp1
+{
+    margin-left: 23%;
+    margin-bottom: 2%;
+}
+button
+{          border: 1px solid black;
+    padding: 14px 30px;
+    border-radius: 25px;
+    width: 182px;
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+    background-color: black;
+    margin-top: 3%;
+    
+}
+.sign-up
+{
+    width: 100%;
+    text-align: center;
+}
+.last
+{
+    width: 74%;
+    text-align: center;
+    margin-left: 9%;
+}
+     
+	    2.profiles
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-cont">
+        <div class="desc">
+            <h2>Your profiles</h2>
+            <p>See how your different profiles appear in google</p>
+       
+        <div class="imgs">
+            <img src="man1.jpg" class="img1" alt="sara" >
+            <img src="aleksandr-popov-V3snakBbbfY-unsplash.jpg" class="img2"  alt="sara" >
+            
+        </div>
+        
+    </div>
+    </div>
+    <div class="profile">
+        <a href="" class="pro">See profile</a>
+    </div>
+</body>
+</html>
+          
+		   css.main-cont
+{
+    width: 500px;
+    margin: auto;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    padding: 17px;
+    margin-top: 10%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+
+    
+}
+.imgs {
+    width: 80%;
+    
+    margin-top: 9%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgs img {
+    width: 30%;
+    height: 93px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;/* This ensures content beyond the circular area is hidden */
+}
+
+.desc
+{
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    
+    
+}
+h2{
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #00bfff;
+}
+.profile
+{
+    width: 500px;
+    margin: auto;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    padding: 27px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+   
+                          3.image-box
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="imgs">
+            <img src="man1.jpg" alt="img">
+        </div>
+        <div class="des">
+        <i class="fa fa-diamond"></i> <span> SUBSCRIBE TO ANY PLAN</span>
+        <h2>Get more features in google photos</h2>
+        <p>Bring your favorite moments to life with more google photos editing tools fpr ios including magic eraser subject to eligibility</p></div>
+        <div class="btn">View details</div>
+    </div>
+</body>
+</html>
+
+             css
+			 
+.cont
+{
+    width: 26%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 76px auto;
+    /* margin-bottom: 2px; */
+}
+img
+{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 6%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.des
+{
+    padding: 12px;
+}
+i{
+    padding-right: 2px;
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: grey;
+}
+span{
+    color: #282828;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+h2{
+    font-family: system-ui;
+    font-weight: 500;
+    color: #000000;
+}
+p{
+    color: grey;
+    font-size: 20px;
+    font-family: system-ui;
+}
+.btn
+{
+    margin-bottom: 10%;
+    border: 1px solid lightgray;
+    width: 25%;
+    padding: 14px 30px;
+    color: mediumblue;
+    font-family: system-ui;
+    font-weight: 500;
+    margin-left: 3%;
+    /* line-height: 1; */
+}
+
+    4.container
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="con">
+        <h1>Business <br> Development</h1>
+        <p>Have an idea or enquiry for waze buisness development?</p>
+        <button>Share your idea</button>
+    </div>
+    
+</body>
+</html>
+
+                    css
+.con
+{
+    width: 29%;
+    background-color: aquamarine;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 49px;
+    padding-top: 93px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+    padding: 14px 30px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    width: 193px;
+    margin-bottom: 7%;
+}
+h1
+{
+    font-weight: 500;
+    font-size: 36px;
+}
