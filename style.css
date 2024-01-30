@@ -251,7 +251,7 @@ color:#088178;
 }
 #sm-banner{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 #sm-banner .banner-box{
@@ -306,6 +306,7 @@ color:#088178;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0px 80px;
+  margin-top: 3rem;
 }
 #banner3 .banner-box
 {
@@ -351,6 +352,7 @@ font: size 15px; ;
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: #041e42;
+  padding: 1rem;
 }
 #newsletter h4{
   font-size: 20px;
@@ -478,6 +480,7 @@ color: #fff;
 #pagination 
 {
   text-align: center;
+  margin-top: 1rem;
   
 }
 #pagination a{
@@ -613,9 +616,7 @@ outline: none;
   color: #c9cbce;
   z-index: -9;
 }
-.section-p1 {
-  padding: 40px 80px;
-}
+
 
 .section-m1 {
   margin: 40px 0;
@@ -623,4 +624,101 @@ outline: none;
 
 body {
   width: 100%;
+}
+#listbur{
+
+  border: none;
+  border-radius: 50%;
+  padding: 2px;
+  line-height: 0.5;
+  display: none;
+}
+@media (max-width:600px){
+  #navbar{
+  height: 100vh;
+  background-color: #e8eaf6;
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   position: fixed;
+   top: 0;
+   right: 0;
+   display: none;
+   
+  }
+  #listbur{
+    display: block;
+  }
+  #feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section-p1 {
+    padding: 0;
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+ 
+  width: 580px;
+  height: 50vh;
+  
+  padding: 30px;
+  margin-bottom: 1.5rem;
+}
+
+#banner3{
+  padding: 0 2rem;
+ 
+}
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+ 
+  padding: 20px;
+  margin-bottom: 1.5rem;
+}
+#newsletter{
+  padding: 1.5rem;
+}
+
+  #newsletter input {
+    height: 3.123rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 18rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+footer {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
+}
+#product1 .pro-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ margin-bottom: 1rem;
+  align-items: center;
+}
+#blog{
+  padding: 3rem 0.5rem 2rem 1rem;
+}
 }
